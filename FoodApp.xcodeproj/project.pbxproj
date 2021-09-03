@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A968BFB26E1450800441538 /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968BFA26E1450800441538 /* FoodAppApp.swift */; };
-		0A968BFD26E1450800441538 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968BFC26E1450800441538 /* ContentView.swift */; };
+		0A968BFD26E1450800441538 /* TabChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968BFC26E1450800441538 /* TabChoiceView.swift */; };
 		0A968BFF26E1450900441538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A968BFE26E1450900441538 /* Assets.xcassets */; };
 		0A968C0226E1450900441538 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A968C0126E1450900441538 /* Preview Assets.xcassets */; };
 		0A968C0D26E1450900441538 /* FoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C0C26E1450900441538 /* FoodAppTests.swift */; };
 		0A968C1826E1450900441538 /* FoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C1726E1450900441538 /* FoodAppUITests.swift */; };
+		0A968C3026E154C000441538 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C2F26E154C000441538 /* HomeView.swift */; };
+		0A968C3526E1550100441538 /* StopperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C3426E1550100441538 /* StopperView.swift */; };
+		0A968C3A26E1555C00441538 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C3926E1555C00441538 /* Constant.swift */; };
+		0A968C4226E201D900441538 /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C4126E201D900441538 /* CategoryCardView.swift */; };
+		0A968C4726E2092D00441538 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C4626E2092D00441538 /* Category.swift */; };
+		0A968C4C26E2304600441538 /* CategoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C4B26E2304500441538 /* CategoryVM.swift */; };
+		0A968C5126E233CD00441538 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968C5026E233CD00441538 /* Repository.swift */; };
+		0A968C5726E235DD00441538 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0A968C5626E235DD00441538 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,7 @@
 /* Begin PBXFileReference section */
 		0A968BF726E1450800441538 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A968BFA26E1450800441538 /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
-		0A968BFC26E1450800441538 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A968BFC26E1450800441538 /* TabChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabChoiceView.swift; sourceTree = "<group>"; };
 		0A968BFE26E1450900441538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A968C0126E1450900441538 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A968C0326E1450900441538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +53,13 @@
 		0A968C1326E1450900441538 /* FoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A968C1726E1450900441538 /* FoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppUITests.swift; sourceTree = "<group>"; };
 		0A968C1926E1450900441538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A968C2F26E154C000441538 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0A968C3426E1550100441538 /* StopperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopperView.swift; sourceTree = "<group>"; };
+		0A968C3926E1555C00441538 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0A968C4126E201D900441538 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		0A968C4626E2092D00441538 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0A968C4B26E2304500441538 /* CategoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVM.swift; sourceTree = "<group>"; };
+		0A968C5026E233CD00441538 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A968C5726E235DD00441538 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +111,12 @@
 		0A968BF926E1450800441538 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A968C2C26E1548E00441538 /* Repository */,
+				0A968C2B26E1545800441538 /* Constant */,
+				0A968C2A26E1543D00441538 /* ViewModel */,
+				0A968C2926E1543200441538 /* Model */,
+				0A968C2826E1542500441538 /* View */,
 				0A968BFA26E1450800441538 /* FoodAppApp.swift */,
-				0A968BFC26E1450800441538 /* ContentView.swift */,
 				0A968BFE26E1450900441538 /* Assets.xcassets */,
 				0A968C0326E1450900441538 /* Info.plist */,
 				0A968C0026E1450900441538 /* Preview Content */,
@@ -130,6 +150,65 @@
 			path = FoodAppUITests;
 			sourceTree = "<group>";
 		};
+		0A968C2826E1542500441538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A968C2E26E154A400441538 /* Screen */,
+				0A968C2D26E1549C00441538 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A968C2926E1543200441538 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A968C4626E2092D00441538 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A968C2A26E1543D00441538 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A968C4B26E2304500441538 /* CategoryVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A968C2B26E1545800441538 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				0A968C3926E1555C00441538 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		0A968C2C26E1548E00441538 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0A968C5026E233CD00441538 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0A968C2D26E1549C00441538 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0A968C4126E201D900441538 /* CategoryCardView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0A968C2E26E154A400441538 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0A968BFC26E1450800441538 /* TabChoiceView.swift */,
+				0A968C2F26E154C000441538 /* HomeView.swift */,
+				0A968C3426E1550100441538 /* StopperView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +225,9 @@
 			dependencies = (
 			);
 			name = FoodApp;
+			packageProductDependencies = (
+				0A968C5626E235DD00441538 /* Alamofire */,
+			);
 			productName = FoodApp;
 			productReference = 0A968BF726E1450800441538 /* FoodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +299,9 @@
 				Base,
 			);
 			mainGroup = 0A968BEE26E1450800441538;
+			packageReferences = (
+				0A968C5526E235DD00441538 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0A968BF826E1450800441538 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A968BFD26E1450800441538 /* ContentView.swift in Sources */,
+				0A968C3526E1550100441538 /* StopperView.swift in Sources */,
+				0A968C3026E154C000441538 /* HomeView.swift in Sources */,
+				0A968C3A26E1555C00441538 /* Constant.swift in Sources */,
+				0A968BFD26E1450800441538 /* TabChoiceView.swift in Sources */,
+				0A968C4C26E2304600441538 /* CategoryVM.swift in Sources */,
+				0A968C4226E201D900441538 /* CategoryCardView.swift in Sources */,
 				0A968BFB26E1450800441538 /* FoodAppApp.swift in Sources */,
+				0A968C4726E2092D00441538 /* Category.swift in Sources */,
+				0A968C5126E233CD00441538 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +672,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A968C5526E235DD00441538 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A968C5626E235DD00441538 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A968C5526E235DD00441538 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A968BEF26E1450800441538 /* Project object */;
 }
