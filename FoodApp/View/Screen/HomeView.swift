@@ -37,11 +37,12 @@ struct HomeView: View {
                     .padding(.trailing,40)
                     ScrollView(.horizontal) {
                         HStack(spacing: 20) {
-                            ForEach(0..<10) {
-                                Text("Item \($0)")
-                                    .foregroundColor(.white)
-                                    .font(.largeTitle)
-                                    .background(Color.red)
+                            ForEach(0..<10) {_ in
+                                Button(action: {
+
+                                }) {
+                                    Text("Item").foregroundColor(.white)
+                                }
                             }
                         }.padding(.top, 30)
                         .padding(.leading, 50)
