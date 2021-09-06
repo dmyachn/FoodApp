@@ -12,9 +12,9 @@
 		0A31BA5426E5F7AB00997A0A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31BA5326E5F7AB00997A0A /* Meal.swift */; };
 		0A31BA6226E6145900997A0A /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31BA6126E6145900997A0A /* TabItemView.swift */; };
 		0A31BA6726E6187600997A0A /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31BA6626E6187600997A0A /* HelloView.swift */; };
-		0A31BA6F26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A31BA6C26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */; };
-		0A31BA7026E61DEC00997A0A /* FontsFree-Net-SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A31BA6D26E61DEC00997A0A /* FontsFree-Net-SFProText-Regular.ttf */; };
-		0A31BA7126E61DED00997A0A /* FontsFree-Net-SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A31BA6E26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Bold.ttf */; };
+		0A31BA6F26E61DEC00997A0A /* SFProRounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A31BA6C26E61DEC00997A0A /* SFProRounded-Semibold.ttf */; };
+		0A31BA7026E61DEC00997A0A /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A31BA6D26E61DEC00997A0A /* SFProText-Regular.ttf */; };
+		0A31BA7126E61DED00997A0A /* SFProRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A31BA6E26E61DEC00997A0A /* SFProRounded-Bold.ttf */; };
 		0A968BFB26E1450800441538 /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968BFA26E1450800441538 /* FoodAppApp.swift */; };
 		0A968BFD26E1450800441538 /* TabChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A968BFC26E1450800441538 /* TabChoiceView.swift */; };
 		0A968BFF26E1450900441538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A968BFE26E1450900441538 /* Assets.xcassets */; };
@@ -54,9 +54,9 @@
 		0A31BA5326E5F7AB00997A0A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		0A31BA6126E6145900997A0A /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		0A31BA6626E6187600997A0A /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
-		0A31BA6C26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SF-Pro-Rounded-Semibold.ttf"; path = "../../../../../Downloads/FontsFree-Net-SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
-		0A31BA6D26E61DEC00997A0A /* FontsFree-Net-SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SFProText-Regular.ttf"; path = "../../../../../Downloads/FontsFree-Net-SFProText-Regular.ttf"; sourceTree = "<group>"; };
-		0A31BA6E26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-SF-Pro-Rounded-Bold.ttf"; path = "../../../../../Downloads/FontsFree-Net-SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
+		0A31BA6C26E61DEC00997A0A /* SFProRounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProRounded-Semibold.ttf"; path = "../../../../../Downloads/SFProRounded-Semibold.ttf"; sourceTree = "<group>"; };
+		0A31BA6D26E61DEC00997A0A /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProText-Regular.ttf"; path = "../../../../../Downloads/SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		0A31BA6E26E61DEC00997A0A /* SFProRounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProRounded-Bold.ttf"; path = "../../../../../Downloads/SFProRounded-Bold.ttf"; sourceTree = "<group>"; };
 		0A968BF726E1450800441538 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A968BFA26E1450800441538 /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
 		0A968BFC26E1450800441538 /* TabChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabChoiceView.swift; sourceTree = "<group>"; };
@@ -107,9 +107,9 @@
 		0A31BA6B26E61D9C00997A0A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				0A31BA6E26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Bold.ttf */,
-				0A31BA6C26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */,
-				0A31BA6D26E61DEC00997A0A /* FontsFree-Net-SFProText-Regular.ttf */,
+				0A31BA6E26E61DEC00997A0A /* SFProRounded-Bold.ttf */,
+				0A31BA6C26E61DEC00997A0A /* SFProRounded-Semibold.ttf */,
+				0A31BA6D26E61DEC00997A0A /* SFProText-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -350,10 +350,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A31BA6F26E61DEC00997A0A /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf in Resources */,
-				0A31BA7126E61DED00997A0A /* FontsFree-Net-SF-Pro-Rounded-Bold.ttf in Resources */,
+				0A31BA6F26E61DEC00997A0A /* SFProRounded-Semibold.ttf in Resources */,
+				0A31BA7126E61DED00997A0A /* SFProRounded-Bold.ttf in Resources */,
 				0A968C0226E1450900441538 /* Preview Assets.xcassets in Resources */,
-				0A31BA7026E61DEC00997A0A /* FontsFree-Net-SFProText-Regular.ttf in Resources */,
+				0A31BA7026E61DEC00997A0A /* SFProText-Regular.ttf in Resources */,
 				0A968BFF26E1450900441538 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

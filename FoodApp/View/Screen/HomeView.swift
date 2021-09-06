@@ -16,7 +16,7 @@ struct HomeView: View {
                 ProjectColors.background.edgesIgnoringSafeArea(.all)
                 VStack {
                     HStack {
-                        Text("Delicious \nfood for you").font(Font.custom(ProjectFonts.RoundedBold, size: 34))
+                        Text("Delicious \nfood for you").font(Font.custom("SFProRounded-Bold", size: 34))
                         Spacer()
                     }.padding(.leading, 40)
                     .padding()
@@ -28,7 +28,7 @@ struct HomeView: View {
                             label: {
                             HStack{
                                 Image("search").padding(7).padding(.leading)
-                                Text("Search").font(Font.custom("SFUIDisplay-Bold", size: 16)).foregroundColor(ProjectColors.gray).bold()
+                                Text("Search").font(Font.custom("SFProText-Regular", size: 16)).foregroundColor(ProjectColors.gray).bold()
                                 Spacer()
                             }.padding(9)
                         })
