@@ -13,26 +13,43 @@ class Repository {
     let parm : [String: Any] = ["" : []]
     
     func getCategory(_ onSuccess: @escaping([Category]) -> Void)  {
-        var categoris = [Category]()
-        AF.request("https://www.themealdb.com/api/json/v1/1/categories.php/",
-                   method: .get,
-                   parameters: parm,
-                   encoding: URLEncoding.default)
+        AF.request("https://www.themealdb.com/api/json/v1/1/categories.php/").validate().responseJSON { response in
+            switch response.result {
+            case .success:
+                if let jsonData = response.data {
+                    let jsonDecoder = JSONDecoder()
+                    do {
+                        let decode = try jsonDecoder.decode([Category].self, from: jsonData)
+//                      onSuccess(decode)
+                        debugPrint(decode)
+                    }catch let error{
+                        debugPrint(error)
+                    }
+                }
+            case .failure(let error):
+                debugPrint(error)
+            }
+        }
+    }
+    
+    func getMeal(search:String, _ onSuccess: @escaping([Meal]) -> Void)  {
+        AF.request("https://www.themealdb.com/api/json/v1/1/search.php?s=" + search)
             .response { response in
-                debugPrint(response)
-                self.getName(search: "kumpir"){_ in }
+                switch response.result {
+                case .success:
+                    if let jsonData = response.data {
+                        let jsonDecoder = JSONDecoder()
+                        do {
+                            let decode = try jsonDecoder.decode([Meal].self, from: jsonData)
+//                          onSuccess(decode)
+                            debugPrint(decode)
+                        }catch let error{
+                            debugPrint(error)
+                        }
+                    }
+                case .failure(let error):
+                    debugPrint(error)
+                }
             }
     }
-    
-    func getName(search:String, _ onSuccess: @escaping([Category]) -> Void)  {
-        var categoris = [Category]()
-        AF.request("https://www.themealdb.com/api/json/v1/1/search.php?s=" + search,
-                   method: .get,
-                   parameters: parm,
-                   encoding: URLEncoding.default)
-            .response { response in
-                debugPrint(response)
-  }
-    }
-    
 }

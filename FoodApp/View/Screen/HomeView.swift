@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var showingModal = false
+    @State private var choice = 0
     var body: some View {
         NavigationView{
             ZStack {
@@ -21,7 +23,7 @@ struct HomeView: View {
                     HStack{
                         Button(
                             action: {
-                                
+                                    showingModal.toggle()
                         },
                             label: {
                             HStack{
@@ -37,14 +39,15 @@ struct HomeView: View {
                     .padding(.trailing,40)
                     ScrollView(.horizontal) {
                         HStack(spacing: 20) {
-                            ForEach(0..<10) {_ in
+                            ForEach(0..<10) {i in
                                 Button(action: {
-
+                                    choice=i
                                 }) {
-                                    Text("Item").foregroundColor(.white)
+                                    Text("Beef").foregroundColor(i==choice ? ProjectColors.orange : ProjectColors.gray)
                                 }
                             }
                         }.padding(.top, 30)
+                        .padding(.bottom, 5)
                         .padding(.leading, 50)
                         .padding(.trailing, 50)
                     }.padding()
@@ -58,7 +61,6 @@ struct HomeView: View {
                 .toolbar {
                 ToolbarItem(placement: .automatic) {
                         Button(action: {
-
                         }) {
                             Image("shopping-cart")
                         }
@@ -68,6 +70,7 @@ struct HomeView: View {
                         
                     }
                 })
+                .fullScreenCover(isPresented: $showingModal, content: SearchView.init)
             }
         }
     }

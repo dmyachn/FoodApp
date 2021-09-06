@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct TabChoiceView: View {
-    
+//    @ObservedObject var categoryMealVM = CategoryMealVM()
+    @State private var showingModal = true
     @State private var tabBarHeight = UIScreen.main.bounds.size.height
     @State private var tabBarWidth = UIScreen.main.bounds.size.width
     @State private var selection = 0
     var body: some View {
         TabView(selection: $selection){
+//            HomeView(categoryMealVM)
             HomeView()
                 .tag(0)
             StopperView()
@@ -23,76 +25,18 @@ struct TabChoiceView: View {
             StopperView()
                 .tag(3)
         }
-//        .frame(width: tabBarWidth, height: tabBarHeight, alignment: .leading)
-//        .opacity(0)
         .overlay(
             VStack {
                 Spacer()
                         HStack{
-                            if selection==0{
-                                        Image("home")
-                                            .renderingMode(.template)
-                                            .foregroundColor(ProjectColors.orange)
-                            }
-                            else {
-                                Button(action: {
-                                    selection = 0
-                                }, label: {
-                                        Image("home")
-                                            .renderingMode(.template)
-                                            .foregroundColor(ProjectColors.gray)
-                                })
-                            }
+                            TabItemView(selection: $selection, tag: 0, imagName: "home")
                             Spacer()
-                            if selection==1{
-                                Image("heart")
-                                    .renderingMode(.template)
-                                    .foregroundColor(ProjectColors.orange)
-                            }
-                            else {
-                                Button(action: {
-                                    selection = 1
-                                }, label: {
-                                    Image("heart")
-                                        .renderingMode(.template)
-                                        .foregroundColor(ProjectColors.gray)
-                                })
-                                
-                            }
+                            TabItemView(selection: $selection, tag: 1, imagName: "heart")
                             Spacer()
-                            
-                            if selection==2{
-                                Image("user")
-                                    .renderingMode(.template)
-                                    .foregroundColor(ProjectColors.orange)
-                            }
-                            else {
-                                Button(action: {
-                                    selection = 2
-                                }, label: {
-                                    Image("user")
-                                        .renderingMode(.template)
-                                        .foregroundColor(ProjectColors.gray)
-                                })
-                                
-                            }
+                            TabItemView(selection: $selection, tag: 2, imagName: "user")
                             Spacer()
-                            
-                            if selection==3{
-                                Image("history")
-                                    .renderingMode(.template)
-                                    .foregroundColor(ProjectColors.orange)
-                            }
-                            else {
-                                Button(action: {
-                                    selection = 3
-                                }, label: {
-                                    Image("history")
-                                        .renderingMode(.template)
-                                        .foregroundColor(ProjectColors.gray)
-                                })
-                                
-                            }
+                            TabItemView(selection: $selection, tag: 3, imagName: "history")
+                                        
                         }.padding(.bottom, 50)
                         .padding(.leading,60)
                         .padding(.trailing,60)
@@ -100,6 +44,7 @@ struct TabChoiceView: View {
             }
             .edgesIgnoringSafeArea(.all)
         )
+        .fullScreenCover(isPresented: $showingModal, content: HelloView.init)
     }
 }
 

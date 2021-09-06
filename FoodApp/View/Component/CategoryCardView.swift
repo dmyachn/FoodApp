@@ -16,7 +16,7 @@ struct CategoryCardView: View {
                 .foregroundColor(.white)
                 .frame(width: 230, height: 320, alignment: .center)
                 .padding(.top, 30)
-            
+                .shadow(color: Color.init(UIColor(red: 0.225, green: 0.225, blue: 0.225, alpha: 0.1)),radius: 60, x: -30) 
                     VStack{
                         Image(uiImage: category.strCategoryThumb.loadImage())
                             .resizable()
